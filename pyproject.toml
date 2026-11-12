@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-campus-navigation"
+version = "1.0.0"
+description = "A Python Dijkstra shortest-path campus navigation project"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+campus-navigator = "campus_navigation.cli:main"
+
+[tool.setuptools.package-data]
+campus_navigation = ["data/*.json"]
